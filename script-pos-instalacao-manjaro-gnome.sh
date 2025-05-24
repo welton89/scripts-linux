@@ -1,4 +1,3 @@
-#!/bin/bash
 
 # Arquivo de log
 log_file="instalacao_pacotes.log"
@@ -36,6 +35,7 @@ pacotes_oficiais=(
   discord
   vlc
   steam
+  lutris
   gnome-system-monitor
   qbittorrent
   gnome-boxes
@@ -45,7 +45,6 @@ pacotes_oficiais=(
   python-pip
   python-pipenv
   python-pipenv-to-requirements
-  code
 )
 
 log "Instalando pacotes do repositório oficial: ${pacotes_oficiais[*]}"
@@ -87,6 +86,11 @@ pacotes_flatpak=(
   com.github.xournalpp.xournalpp
   org.kde.umbrello
   rest.insomnia.Insomnia
+  com.vscodium.codium
+  md.obsidian.Obsidian
+  com.rustdesk.RustDesk
+  me.kozec.syncthingtk
+  com.mattjakeman.ExtensionManager
 )
 
 log "Instalando pacotes Flatpak: ${pacotes_flatpak[*]}"
